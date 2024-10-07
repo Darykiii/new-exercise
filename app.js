@@ -9,7 +9,7 @@ while ( chute!= numerosecreto){
 
  
 if(chute== numerosecreto){
-    console.log(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto}`)
+    console.log(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto} com ${tentativas}`)
 }
 else{
     if(numerosecreto>chute){
@@ -18,5 +18,5 @@ else{
     }else{
         alert(`O número secreto é menor que ${chute}`)
     }
-}
+} tentativas++;
 }
