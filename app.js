@@ -8,8 +8,11 @@ while ( chute!= numerosecreto){
 
 
  
-if(chute== numerosecreto){
-    console.log(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto} com ${tentativas}`)
+if(chute == numerosecreto){
+
+break
+
+    
 }
 else{
     if(numerosecreto>chute){
@@ -19,4 +22,13 @@ else{
         alert(`O número secreto é menor que ${chute}`)
     }
 } tentativas++;
+
+if (tentativas>1){
+    alert(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto} com ${tentativa}`);
+}   else{
+    alert(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto} com ${tentativas}`);
 }
+}   tentativas++;
+
+let palavraTentativa = tentativas > 1 ? "tentativas" : "tentativa";
+alert(`Isso aí!!! Você descobriu o número secreto!!! ${numerosecreto} com ${tentativas} ${palavraTentativa}`);
